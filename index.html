@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Icons -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="register">
+        <div class="register-content">
+            <div class="register-img">
+                <img src="img/registerimg.svg" alt="rocket">
+            </div>
+
+            <div class="wrapper">
+                <form action="" class="register-form" id="register-id">
+                    <h1 class="title">Create Account</h1>
+
+                    <fieldset>
+                        <legend>Your details</legend>
+                        <div class="register-box">
+                            <i class='bx bx-user register-icon'></i>
+                            <input type="text" placeholder="Username" class="register-input">
+                        </div>
+
+                        <div class="register-box">
+                            <i class='bx bx-at register-icon'></i>
+                            <input type="text" placeholder="Email" class="register-input">
+                        </div>
+
+                        <div class="register-box">
+                            <i class='bx bx-lock-alt register-icon'></i>
+                            <input type="password" placeholder="Password" class="register-input">
+                        </div>
+
+
+                        <div class="register-box">
+                            <i class='bx bx-lock-alt register-icon'></i>
+                            <input type="confirm-password" placeholder="Confirm password" class="register-input">
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Who am I?</legend>
+                        <div class="register-box">
+                            <label for="age">Age</label>
+                            <input type="text" id="age" class="register-input">
+                        </div>
+
+
+                        <div class="register-box">
+                            <label for="gender">I identify as</label>
+                            <div class="custom-select">
+                                <select name="gender" id="gender" placeholder="select">
+                                    <option value="non-binary">Non-binary</option>
+                                    <option value="woman">Woman</option>
+                                    <option value="man">Man</option>
+                                    <option value="diverse">gender-diverse</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+                        <div class="register-box">
+                            <label for="about-me">About Me</label>
+                            <textarea name="about-me" id="about-me" cols="20" rows="5"></textarea>
+                        </div>
+
+                    </fieldset>
+
+                    <input type="submit" class="register-btn" id="register-btn" name="submit" value="Create Account">
+            </div>
+
+
+            </form>
+        </div>
+    </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
